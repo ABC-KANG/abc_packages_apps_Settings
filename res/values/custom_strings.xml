@@ -23,6 +23,10 @@
 
     <string name="rom_version_title">ABC ROM version</string>
 
+    <!-- OTA -->
+    <string name="ota_settings_title">ABC ROM updates</string>
+    <string name="ota_settings_summary">Get the latest update</string>
+
     <string name="twilight_mode_location_dialog">Location disabled</string>
     <string name="twilight_mode_location_disabled">Location access is disabled</string>
     <string name="twilight_mode_location_enable">Enable</string>
