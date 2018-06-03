@@ -95,4 +95,6 @@
     <string name="sub_activate_failed">Ошибка при активации.</string>
     <string name="sub_deactivate_success">Деактивация выполнена.</string>
     <string name="sub_deactivate_failed">Ошибка при деактивации.</string>
+
+    <string name="custom_ambient_display_summary">Дополнительные настройки Ambient Display</string>
 </resources>
