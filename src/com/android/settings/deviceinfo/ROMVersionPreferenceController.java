@@ -29,7 +29,7 @@ public class ROMVersionPreferenceController extends AbstractPreferenceController
         PreferenceControllerMixin {
 
     private static final String PROPERTY_ABC_VERSION = "ro.abc.version";
-    private static final String KEY_ABC_VERSION = "modversion";
+    private static final String KEY_ABC_UPDATES = "abc_updates";
 
     public ROMVersionPreferenceController(Context context) {
         super(context);
@@ -42,16 +42,18 @@ public class ROMVersionPreferenceController extends AbstractPreferenceController
 
     @Override
     public String getPreferenceKey() {
-        return KEY_ABC_VERSION;
+        return KEY_ABC_UPDATES;
     }
 
     @Override
     public void displayPreference(PreferenceScreen screen) {
         super.displayPreference(screen);
-        final Preference pref = screen.findPreference(KEY_ABC_VERSION);
+        final Preference pref = screen.findPreference(KEY_ABC_UPDATES);
         if (pref == null) return;
+        String summary = mContext.getString(R.string.ota_version_summary);
         String version = SystemProperties.get(PROPERTY_ABC_VERSION);
-        pref.setSummary(version);
+        
+        pref.setSummary(String.format(summary, version));
     }
 }
 
