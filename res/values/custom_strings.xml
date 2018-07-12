@@ -21,11 +21,11 @@
 
     <string name="show_dev_already_enabled">No Need, Development settings are enabled by default.</string>
 
-    <string name="rom_version_title">ABC ROM version</string>
+    <string name="rom_version_title">Build ABC</string>
 
     <!-- OTA -->
-    <string name="ota_settings_title">ABC ROM updates</string>
-    <string name="ota_settings_summary">Get the latest update</string>
+    <string name="ota_settings_title">ABC Updater</string>
+    <string name="ota_settings_summary">Check for the latest version of the rom</string>
 
     <!-- Pixel color on sim card -->
     <string name="default_sim_color">Pixel</string>
