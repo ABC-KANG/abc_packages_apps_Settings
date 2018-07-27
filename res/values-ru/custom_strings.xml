@@ -22,8 +22,7 @@
     <string name="show_dev_already_enabled">Настройки для разработчика активированы по умолчанию.</string>
 
     <!-- OTA -->
-    <string name="ota_settings_title">Обновления ABC</string>
-    <string name="ota_version_summary">Текущая версия: %1$s</string>
+    <string name="ota_version_title">Сборка ABC</string>
 
     <string name="twilight_mode_location_dialog">Передача геоданных отключена</string>
     <string name="twilight_mode_location_disabled">Нет доступа к поиску местоположения</string>

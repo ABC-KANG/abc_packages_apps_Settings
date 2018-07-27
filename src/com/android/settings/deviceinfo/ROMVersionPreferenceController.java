@@ -50,10 +50,8 @@ public class ROMVersionPreferenceController extends AbstractPreferenceController
         super.displayPreference(screen);
         final Preference pref = screen.findPreference(KEY_ABC_UPDATES);
         if (pref == null) return;
-        String summary = mContext.getString(R.string.ota_version_summary);
         String version = SystemProperties.get(PROPERTY_ABC_VERSION);
-        
-        pref.setSummary(String.format(summary, version));
+        pref.setSummary(version);
     }
 }
 

@@ -23,8 +23,7 @@
 
 
     <!-- OTA -->
-    <string name="ota_settings_title">ABC Updater</string>
-    <string name="ota_version_summary">Current version: %1$s</string>
+    <string name="ota_version_title">ABC Build</string>
 
     <!-- Pixel color on sim card -->
     <string name="default_sim_color">Pixel</string>
