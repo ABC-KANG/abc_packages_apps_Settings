@@ -17,6 +17,8 @@
 package com.android.settings.deviceinfo;
 
 import android.content.Context;
+import android.support.v7.preference.Preference;
+import android.support.v7.preference.PreferenceScreen;
 
 import com.android.settings.R;
 
@@ -38,6 +40,21 @@ public class OTAPreferenceController extends AbstractPreferenceController
     @Override
     public boolean isAvailable() {
         return DevelopmentSettings.isPackageInstalled(mContext, "com.abc.ota");
+    }
+
+    @Override
+    public void displayPreference(PreferenceScreen screen) {
+        if (!isAvailable()) {
+            return;
+        }
+    }
+
+    @Override
+    public boolean handlePreferenceTreeClick(Preference preference) {
+        if (!isAvailable()) {
+            return true;
+        }
+        return false;
     }
 
     @Override
